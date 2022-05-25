@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		962437C7283E3C0200DE15C6 /* SmylerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962437C6283E3C0200DE15C6 /* SmylerView.swift */; };
+		962437C9283E5A8B00DE15C6 /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962437C8283E5A8B00DE15C6 /* SuccessView.swift */; };
+		9694EA02283E2E040030C702 /* MarmeladeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9694EA01283E2E040030C702 /* MarmeladeAppApp.swift */; };
+		9694EA04283E2E040030C702 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9694EA03283E2E040030C702 /* ContentView.swift */; };
+		9694EA06283E2E040030C702 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9694EA05283E2E040030C702 /* Assets.xcassets */; };
+		9694EA09283E2E040030C702 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9694EA08283E2E040030C702 /* Preview Assets.xcassets */; };
+		9694EA11283E2E1C0030C702 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 9694EA10283E2E1C0030C702 /* Apollo */; };
+		9694EA13283E2E1C0030C702 /* ApolloAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 9694EA12283E2E1C0030C702 /* ApolloAPI */; };
+		9694EA15283E2E1C0030C702 /* ApolloCodegenLib in Frameworks */ = {isa = PBXBuildFile; productRef = 9694EA14283E2E1C0030C702 /* ApolloCodegenLib */; };
+		9694EA17283E2E1C0030C702 /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 9694EA16283E2E1C0030C702 /* ApolloSQLite */; };
+		9694EA19283E2E1C0030C702 /* ApolloUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 9694EA18283E2E1C0030C702 /* ApolloUtils */; };
+		9694EA1B283E2E1C0030C702 /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 9694EA1A283E2E1C0030C702 /* ApolloWebSocket */; };
+		9694EA1D283E2EB20030C702 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 9694EA1C283E2EB20030C702 /* schema.json */; };
+		9694EA20283E2EC90030C702 /* Queries.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 9694EA1F283E2EC90030C702 /* Queries.graphql */; };
+		9694EA23283E2F260030C702 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9694EA22283E2F260030C702 /* API.swift */; };
+		9694EA25283E30420030C702 /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9694EA24283E30420030C702 /* Apollo.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		962437C6283E3C0200DE15C6 /* SmylerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmylerView.swift; sourceTree = "<group>"; };
+		962437C8283E5A8B00DE15C6 /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
+		9694E9FE283E2E040030C702 /* MarmeladeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarmeladeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9694EA01283E2E040030C702 /* MarmeladeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarmeladeAppApp.swift; sourceTree = "<group>"; };
+		9694EA03283E2E040030C702 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9694EA05283E2E040030C702 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9694EA08283E2E040030C702 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9694EA1C283E2EB20030C702 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		9694EA1F283E2EC90030C702 /* Queries.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Queries.graphql; sourceTree = "<group>"; };
+		9694EA22283E2F260030C702 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		9694EA24283E30420030C702 /* Apollo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apollo.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9694E9FB283E2E040030C702 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9694EA13283E2E1C0030C702 /* ApolloAPI in Frameworks */,
+				9694EA1B283E2E1C0030C702 /* ApolloWebSocket in Frameworks */,
+				9694EA19283E2E1C0030C702 /* ApolloUtils in Frameworks */,
+				9694EA17283E2E1C0030C702 /* ApolloSQLite in Frameworks */,
+				9694EA15283E2E1C0030C702 /* ApolloCodegenLib in Frameworks */,
+				9694EA11283E2E1C0030C702 /* Apollo in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9694E9F5283E2E040030C702 = {
+			isa = PBXGroup;
+			children = (
+				9694EA00283E2E040030C702 /* MarmeladeApp */,
+				9694E9FF283E2E040030C702 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9694E9FF283E2E040030C702 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9694E9FE283E2E040030C702 /* MarmeladeApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9694EA00283E2E040030C702 /* MarmeladeApp */ = {
+			isa = PBXGroup;
+			children = (
+				9694EA01283E2E040030C702 /* MarmeladeAppApp.swift */,
+				9694EA26283E309F0030C702 /* Views */,
+				9694EA1E283E2EB50030C702 /* GraphQL */,
+				9694EA1C283E2EB20030C702 /* schema.json */,
+				9694EA05283E2E040030C702 /* Assets.xcassets */,
+				9694EA07283E2E040030C702 /* Preview Content */,
+			);
+			path = MarmeladeApp;
+			sourceTree = "<group>";
+		};
+		9694EA07283E2E040030C702 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9694EA08283E2E040030C702 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9694EA1E283E2EB50030C702 /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				9694EA22283E2F260030C702 /* API.swift */,
+				9694EA1F283E2EC90030C702 /* Queries.graphql */,
+				9694EA24283E30420030C702 /* Apollo.swift */,
+			);
+			path = GraphQL;
+			sourceTree = "<group>";
+		};
+		9694EA26283E309F0030C702 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9694EA03283E2E040030C702 /* ContentView.swift */,
+				962437C6283E3C0200DE15C6 /* SmylerView.swift */,
+				962437C8283E5A8B00DE15C6 /* SuccessView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9694E9FD283E2E040030C702 /* MarmeladeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9694EA0C283E2E040030C702 /* Build configuration list for PBXNativeTarget "MarmeladeApp" */;
+			buildPhases = (
+				9694EA21283E2EE00030C702 /* Generate Apollo GraphQL API */,
+				9694E9FA283E2E040030C702 /* Sources */,
+				9694E9FB283E2E040030C702 /* Frameworks */,
+				9694E9FC283E2E040030C702 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarmeladeApp;
+			packageProductDependencies = (
+				9694EA10283E2E1C0030C702 /* Apollo */,
+				9694EA12283E2E1C0030C702 /* ApolloAPI */,
+				9694EA14283E2E1C0030C702 /* ApolloCodegenLib */,
+				9694EA16283E2E1C0030C702 /* ApolloSQLite */,
+				9694EA18283E2E1C0030C702 /* ApolloUtils */,
+				9694EA1A283E2E1C0030C702 /* ApolloWebSocket */,
+			);
+			productName = MarmeladeApp;
+			productReference = 9694E9FE283E2E040030C702 /* MarmeladeApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9694E9F6283E2E040030C702 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					9694E9FD283E2E040030C702 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 9694E9F9283E2E040030C702 /* Build configuration list for PBXProject "MarmeladeApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9694E9F5283E2E040030C702;
+			packageReferences = (
+				9694EA0F283E2E1C0030C702 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
+			productRefGroup = 9694E9FF283E2E040030C702 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9694E9FD283E2E040030C702 /* MarmeladeApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9694E9FC283E2E040030C702 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9694EA09283E2E040030C702 /* Preview Assets.xcassets in Resources */,
+				9694EA1D283E2EB20030C702 /* schema.json in Resources */,
+				9694EA20283E2EC90030C702 /* Queries.graphql in Resources */,
+				9694EA06283E2E040030C702 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9694EA21283E2EE00030C702 /* Generate Apollo GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Don't run this during index builds\nif [ $ACTION = \"indexbuild\" ]; then exit 0; fi\n\n# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" ./GraphQL/API.swift\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9694E9FA283E2E040030C702 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				962437C9283E5A8B00DE15C6 /* SuccessView.swift in Sources */,
+				9694EA04283E2E040030C702 /* ContentView.swift in Sources */,
+				9694EA23283E2F260030C702 /* API.swift in Sources */,
+				9694EA25283E30420030C702 /* Apollo.swift in Sources */,
+				9694EA02283E2E040030C702 /* MarmeladeAppApp.swift in Sources */,
+				962437C7283E3C0200DE15C6 /* SmylerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9694EA0A283E2E040030C702 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9694EA0B283E2E040030C702 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9694EA0D283E2E040030C702 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MarmeladeApp/Preview Content\"";
+				DEVELOPMENT_TEAM = AFS69AFJ7W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jason.MarmeladeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9694EA0E283E2E040030C702 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MarmeladeApp/Preview Content\"";
+				DEVELOPMENT_TEAM = AFS69AFJ7W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jason.MarmeladeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9694E9F9283E2E040030C702 /* Build configuration list for PBXProject "MarmeladeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9694EA0A283E2E040030C702 /* Debug */,
+				9694EA0B283E2E040030C702 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9694EA0C283E2E040030C702 /* Build configuration list for PBXNativeTarget "MarmeladeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9694EA0D283E2E040030C702 /* Debug */,
+				9694EA0E283E2E040030C702 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9694EA0F283E2E1C0030C702 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9694EA10283E2E1C0030C702 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9694EA0F283E2E1C0030C702 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		9694EA12283E2E1C0030C702 /* ApolloAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9694EA0F283E2E1C0030C702 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloAPI;
+		};
+		9694EA14283E2E1C0030C702 /* ApolloCodegenLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9694EA0F283E2E1C0030C702 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloCodegenLib;
+		};
+		9694EA16283E2E1C0030C702 /* ApolloSQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9694EA0F283E2E1C0030C702 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloSQLite;
+		};
+		9694EA18283E2E1C0030C702 /* ApolloUtils */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9694EA0F283E2E1C0030C702 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloUtils;
+		};
+		9694EA1A283E2E1C0030C702 /* ApolloWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9694EA0F283E2E1C0030C702 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloWebSocket;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 9694E9F6283E2E040030C702 /* Project object */;
+}
