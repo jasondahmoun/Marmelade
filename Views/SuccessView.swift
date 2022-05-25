@@ -10,7 +10,7 @@ import SwiftUI
 struct SuccessView: View {
     var body: some View {
         Text("Félicitations vous y êtes arrivés")
-            .font(.system(size: 60)
+            .font(.system(size: 60))
             .bold()
             
     }

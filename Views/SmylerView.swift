@@ -32,6 +32,7 @@ struct SmylerView: View {
                     .frame(width: 315, height: 22, alignment: .center)
                 }
                 Spacer()
+                getImage(pourcent: pourcent)
                 HStack (alignment: .firstTextBaseline) {
                     Text("\(String(Int(round(pourcent)))) %")
                         .font(.system(size: 55))
@@ -39,12 +40,13 @@ struct SmylerView: View {
                         .font(.system(size: 20))
                 }
                 .padding()
-                getImage(pourcent: pourcent)
                 Slider(value: $pourcent, in: 0...100)
                     .allowsHitTesting(false)
                     .padding()
-                    Button("Citation suivante") {
-                    currentIndex += 1
+                Button(action: { currentIndex += 1 }) {
+                    Text("Citations suivante")
+                        .foregroundColor(Color.white)
+                        .padding()
                 }
                     .frame(width: 178, height: 33)
                     .background(Color.purple)
