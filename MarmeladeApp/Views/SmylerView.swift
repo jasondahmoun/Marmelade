@@ -79,15 +79,29 @@ struct SmylerView: View {
                         }
                     }
                 }
-                Button(action: { currentIndex += 1 }) {
-                    Text("Citations suivante")
-                        .foregroundColor(Color.white)
-                        .padding()
+                if pourcent < 95 {
+                    Button(action: { currentIndex += 1 }) {
+                        Text("Citations suivante")
+                            .foregroundColor(Color.white)
+                            .padding()
+                    }
+                    .frame(width: 178, height: 33)
+                    .background(Color.buttonColor)
+                    .clipShape(Capsule())
+                    .padding()
+                    
+                } else {
+                    Button(action: { displaySucces = true }) {
+                        Text("Finir")
+                            .foregroundColor(Color.white)
+                            .padding()
+                    }
+                    .frame(width: 178, height: 33)
+                    .background(Color.buttonColor)
+                    .clipShape(Capsule())
+                    .padding()
                 }
-                .frame(width: 178, height: 33)
-                .background(Color.buttonColor)
-                .clipShape(Capsule())
-                .padding()
+                
                 Spacer()
                     .frame(height: 220)
             }
@@ -109,6 +123,7 @@ struct SmylerView: View {
             DisplayAlert()
         }
     }
+    
     private func getImage(pourcent: CGFloat) ->Image {
         switch pourcent {
         case 0...39:
